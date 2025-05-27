@@ -1,0 +1,3 @@
+ALTER TABLE antriankilat AUTO_INCREMENT=1
+
+SELECT CASE WHEN (SELECT `stok_barang` FROM `barang` WHERE `id_barang` = :idBarang) > :jumlah THEN true ELSE false END FROM DUAL
